@@ -26,6 +26,7 @@ class Clear extends Component {
                             <div className="panel panel-white post panel-shadow">
                                 <div className="post-heading">
                                     <div className="pull-left meta">
+                                        <div>Clears the Chirps</div>
                                         <div className="x">
                                             <button
                                                 onClick={(event) => {return this.handleClear(event)}}

@@ -6,6 +6,7 @@ body {
 
 .x {
   display: inline-block;
+  padding: 3px 3px;
 }
 
 .panel-shadow {
@@ -22,6 +23,11 @@ border-color: #ddd;
 .panel-white  .panel-footer {
 background-color: #fff;
 border-color: #ddd;
+}
+
+.input-heading {
+height: 65px;
+padding: 10px 5px;
 }
 
 .post .post-heading {

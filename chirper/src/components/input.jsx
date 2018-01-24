@@ -22,6 +22,13 @@ class Input extends Component {
 
     handleOutput(event) {
         this.props.onOutput(this.state);
+        let clearStats = 
+            {
+                name: '',
+                text: ''
+            };
+        
+        this.setState(clearStats);
     }
 
     render() {
@@ -33,7 +40,7 @@ class Input extends Component {
                     <div className="row">
                         <div className="col-sm-12">
                             {/* <div className="panel panel-white post panel-shadow"> */}
-                                <div className="post-heading">
+                                <div className="input-heading">
                                     <div className="pull-left meta">
                                         <div className="x">
                                             <input

@@ -13,13 +13,13 @@ class List extends Component {
                     name: 'Name Top 1',
                     id: 0,
                     text: 'Text Bottom 1',
-                    
+
                 },
                 {
                     name: 'Name Top 2',
                     id: 1,
                     text: 'Text Bottom 2',
-                    
+
                 },
             ]
         };
@@ -33,24 +33,30 @@ class List extends Component {
         };
 
         let id = newList.info[newList.info.length - 1].id + 1;
-      
+
         newList.info.push({
             name: value.name,
             id,
             text: value.text,
         });
 
-        this.setState(newList);
+        if (value.name === '' && value.text === '') {
+            alert('Missing Chirp Info!')
+        } else {
+            this.setState(newList);
+        }
+
 
     }
 
     handleClear(value) {
         let clearState = {
-            info: [ {
-                name: '',
-                text: '',
-            }
-                
+            info: [
+                {
+                    name: '',
+                    text: '',
+                }
+
             ]
         }
         this.setState(clearState);
@@ -67,6 +73,7 @@ class List extends Component {
                             <div className="panel panel-white post panel-shadow">
                                 <div className="post-heading">
                                     <div className="pull-left meta">
+                                        <div>Make Your Chirps Here</div>
                                         <div>
                                             <Input onOutput={(value) => this.handleOutput(value)} />
                                             <Clear onClear={(value) => this.handleClear(value)} />
