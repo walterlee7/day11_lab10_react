@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Items from './items';
 import Input from './input';
-//import Time from './time';
+import Clear from './clear';
 
 class List extends Component {
     constructor(props) {
@@ -33,9 +33,7 @@ class List extends Component {
         };
 
         let id = newList.info[newList.info.length - 1].id + 1;
-        console.log(value.name);
-        console.log(value.text);
-
+      
         newList.info.push({
             name: value.name,
             id,
@@ -43,8 +41,20 @@ class List extends Component {
         });
 
         this.setState(newList);
+
     }
 
+    handleClear(value) {
+        let clearState = {
+            info: [ {
+                name: '',
+                text: '',
+            }
+                
+            ]
+        }
+        this.setState(clearState);
+    }
 
 
     render() {
@@ -59,11 +69,9 @@ class List extends Component {
                                     <div className="pull-left meta">
                                         <div>
                                             <Input onOutput={(value) => this.handleOutput(value)} />
+                                            <Clear onClear={(value) => this.handleClear(value)} />
                                             <Items info={this.state.info} />
                                         </div>
-                                        {/* <h6 className="text-muted time">
-                                            <Time />
-                                        </h6> */}
                                     </div>
                                 </div>
                             </div>

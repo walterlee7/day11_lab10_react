@@ -1,5 +1,5 @@
 import React from 'react';
-//import Time from './time';
+import Time from './time';
 
 const Items = (props) => {
 
@@ -14,9 +14,9 @@ const Items = (props) => {
                                     <div className="title h5">
                                         <div>{item.name}</div>
                                     </div>
-                                    {/* <h6 className="text-muted time">
+                                    <h6 className="text-muted time">
                                         <Time />
-                                    </h6> */}
+                                    </h6>
                                 </div>
                             </div>
                             <div className="post-description">
