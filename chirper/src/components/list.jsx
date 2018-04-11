@@ -21,7 +21,8 @@ class List extends Component {
                     text: 'Text Bottom 2',
 
                 },
-            ]
+            ], 
+            chirpClass: 'post'
         };
     }
 
@@ -31,6 +32,12 @@ class List extends Component {
                 ...this.state.info
             ]
         };
+
+        if (this.state.chirpClass === 'post') {
+            newList.chirpClass = 'post2';
+        } else {
+            newList.chirpClass = 'post';
+        }
 
         let id = newList.info[newList.info.length - 1].id + 1;
 
@@ -70,7 +77,7 @@ class List extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">
-                            <div className="panel panel-white post panel-shadow">
+                            <div className={"panel panel-white " + this.state.chirpClass + " panel-shadow"}>
                                 <div className="post-heading">
                                     <div className="pull-left meta">
                                         <div>Make Your Chirps Here</div>

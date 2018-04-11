@@ -29,6 +29,8 @@ class Input extends Component {
             };
         
         this.setState(clearStats);
+        
+
     }
 
     render() {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Color from './color';
 
 class Clear extends Component {
     constructor(props) {
@@ -26,11 +27,14 @@ class Clear extends Component {
                             <div className="panel panel-white post panel-shadow">
                                 <div className="post-heading">
                                     <div className="pull-left meta">
-                                        <div>Clears the Chirps</div>
+                                        <div>Clears the Chirps or Change Colors</div>
                                         <div className="x">
                                             <button
                                                 onClick={(event) => {return this.handleClear(event)}}
                                             >Clear</button>
+                                        </div>
+                                        <div className="x">
+                                            <Color />
                                         </div>
                                     </div>
                                 </div>
