@@ -1,5 +1,4 @@
 import React from 'react';
-import Time from './time';
 
 const Items = (props) => {
 
@@ -9,16 +8,6 @@ const Items = (props) => {
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="panel panel-white post panel-shadow">
-                            <div className="post-heading">
-                                <div className="pull-left meta">
-                                    <div className="title h5">
-                                        <div>{item.name}</div>
-                                    </div>
-                                    <h6 className="text-muted time">
-                                        <Time />
-                                    </h6>
-                                </div>
-                            </div>
                             <div className="post-description">
                                 <div>{item.text}</div>
                             </div>

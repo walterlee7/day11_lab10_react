@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Items from './items';
 import Input from './input';
-import Clear from './clear';
 
 class List extends Component {
     constructor(props) {
@@ -10,18 +9,10 @@ class List extends Component {
         this.state = {
             info: [
                 {
-                    name: 'Name Top 1',
                     id: 0,
-                    text: 'Text Bottom 1',
-
+                    text: 'Hello World!',
                 },
-                {
-                    name: 'Name Top 2',
-                    id: 1,
-                    text: 'Text Bottom 2',
-
-                },
-            ], 
+            ],
             chirpClass: 'post'
         };
     }
@@ -42,17 +33,15 @@ class List extends Component {
         let id = newList.info[newList.info.length - 1].id + 1;
 
         newList.info.push({
-            name: value.name,
             id,
             text: value.text,
         });
 
-        if (value.name === '' && value.text === '') {
+        if (value.text === '') {
             alert('Missing Chirp Info!')
         } else {
             this.setState(newList);
         }
-
 
     }
 
@@ -60,10 +49,8 @@ class List extends Component {
         let clearState = {
             info: [
                 {
-                    name: '',
                     text: '',
                 }
-
             ]
         }
         this.setState(clearState);
@@ -71,7 +58,6 @@ class List extends Component {
 
 
     render() {
-
         return (
             <div className="Comment">
                 <div className="container">
@@ -80,10 +66,12 @@ class List extends Component {
                             <div className={"panel panel-white " + this.state.chirpClass + " panel-shadow"}>
                                 <div className="post-heading">
                                     <div className="pull-left meta">
-                                        <div>Make Your Chirps Here</div>
+                                        <div className="chirpTitle">Make Chirps Here</div>
                                         <div>
-                                            <Input onOutput={(value) => this.handleOutput(value)} />
-                                            <Clear onClear={(value) => this.handleClear(value)} />
+                                            <Input
+                                                onOutput={(value) => this.handleOutput(value)}
+                                                onClear={(value) => this.handleClear(value)}
+                                            />
                                             <Items info={this.state.info} />
                                         </div>
                                     </div>

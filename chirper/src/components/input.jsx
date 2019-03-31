@@ -5,32 +5,27 @@ class Input extends Component {
         super(props);
 
         this.state = {
-            name: '',
             text: ''
         };
 
     }
 
-    handleInputNameChange = (value) => {
-        this.setState({ name: value });
-    }
-
-
     handleInputTextChange = (value) => {
         this.setState({ text: value });
     }
 
+    handleClear(event) {
+        this.props.onClear(this.state);
+    }
+
     handleOutput(event) {
         this.props.onOutput(this.state);
-        let clearStats = 
-            {
-                name: '',
-                text: ''
-            };
-        
-        this.setState(clearStats);
-        
+        let clearStats =
+        {
+            text: ''
+        };
 
+        this.setState(clearStats);
     }
 
     render() {
@@ -41,30 +36,28 @@ class Input extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">
-                            {/* <div className="panel panel-white post panel-shadow"> */}
-                                <div className="input-heading">
-                                    <div className="pull-left meta">
-                                        <div className="x">
-                                            <input
-                                                placeholder="name"
-                                                value={this.state.name}
-                                                onChange={(event) => this.handleInputNameChange(event.target.value)} />
-                                        </div>
-                                        <div className="x">
-                                            <input
-                                                placeholder="text"
-                                                value={this.state.text}
-                                                onChange={(event) => this.handleInputTextChange(event.target.value)} />
-                                        </div >
-                                        <div className="x">
-                                            <button
-                                                onClick={(event) => { return this.handleOutput(event) }}
-                                            >Chirp</button>
-                                        </div>
+                            <div className="input-heading">
+                                <div className="">
+                                    <div className="clear">
+                                        <input
+                                            className="textInput"
+                                            placeholder="text"
+                                            value={this.state.text}
+                                            onChange={(event) => this.handleInputTextChange(event.target.value)} />
+                                    </div >
+                                    <div className="clear">
+                                        <button
+                                            className="textButton"
+                                            onClick={(event) => { return this.handleOutput(event) }}
+                                        >Chirp</button>
+                                    </div>
+                                    <div className="clear">
+                                        <button
+                                            onClick={(event) => { return this.handleClear(event) }}
+                                        >Clear</button>
                                     </div>
                                 </div>
-
-                            {/* </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
