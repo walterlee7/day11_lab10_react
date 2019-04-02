@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
-// import '../App.css';
 import List from './list';
 
 
 class Header extends Component {
     render() {
+        console.log("This is the process.env", process.env.PUBLIC_URL);
         return (
             <div className="App">
                 <header className="App-header">
