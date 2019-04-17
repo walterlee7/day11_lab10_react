@@ -15,7 +15,8 @@ class Input extends Component {
     }
 
     handleClear(event) {
-        this.props.onClear(this.state);
+        // this.props.onClear(this.state);
+        window.location.reload();
     }
 
     handleOutput(event) {
@@ -35,7 +36,7 @@ class Input extends Component {
             <div className="Input">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-12">
+                        <div className="col-sm-12 input-hud">
                             <div className="input-heading">
                                 <div className="">
                                     <div className="clear">
@@ -52,7 +53,7 @@ class Input extends Component {
                                         >Chirp</button>
                                     </div>
                                     <div className="clear">
-                                        <button
+                                        <button className="btn-clear"
                                             onClick={(event) => { return this.handleClear(event) }}
                                         >Clear</button>
                                     </div>

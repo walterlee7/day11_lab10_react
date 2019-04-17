@@ -49,6 +49,10 @@ body {
     padding: 0.5em;
 }
 
+.input-hud {
+    min-width: 300px;
+}
+
 .textInput {
     border: 0.5px solid black;
     padding: 0.5em;
@@ -63,6 +67,10 @@ body {
 .clear {
   display: inline-block;
   padding: 3px 3px;
+}
+
+.btn-clear {
+    border: 0.5px solid black;
 }
 
 .panel-shadow {
@@ -116,6 +124,7 @@ height: auto;
 .post .post-description {
 padding: 15px;
 background-color: lightblue;
+margin: 0.5em;
 }
 .post .post-description p {
 font-size: 20px;

@@ -45,7 +45,7 @@ class List extends Component {
 
     }
 
-    handleClear(value) {
+    handleClear() {
         let clearState = {
             info: [
                 {
@@ -70,7 +70,7 @@ class List extends Component {
                                         <div>
                                             <Input
                                                 onOutput={(value) => this.handleOutput(value)}
-                                                onClear={(value) => this.handleClear(value)}
+                                            // onClear={(value) => this.handleClear()}
                                             />
                                             <Items info={this.state.info} />
                                         </div>
