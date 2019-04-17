@@ -38,7 +38,7 @@ class Input extends Component {
                     <div className="row">
                         <div className="col-sm-12 input-hud">
                             <div className="input-heading">
-                                <div className="">
+                                <div className="input-wrapper">
                                     <div className="clear">
                                         <input
                                             className="textInput"
