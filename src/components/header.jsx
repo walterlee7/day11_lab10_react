@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import List from './list';
+import './index.css';
 
 class Header extends Component {
     render() {
