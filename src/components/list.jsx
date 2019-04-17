@@ -63,7 +63,7 @@ class List extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">
-                            <div className={"panel panel-white " + this.state.chirpClass + " panel-shadow"}>
+                            <div className={"panel panel-white panel-input " + this.state.chirpClass + " panel-shadow"}>
                                 <div className="post-heading">
                                     <div className="pull-left meta">
                                         <div className="chirpTitle">Make Chirps Here</div>
