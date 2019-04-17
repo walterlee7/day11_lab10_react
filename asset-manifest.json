@@ -1,12 +1,14 @@
 {
-  "main.js": "/day11_lab10_react/static/js/main.e36e85c4.chunk.js",
-  "main.js.map": "/day11_lab10_react/static/js/main.e36e85c4.chunk.js.map",
+  "main.css": "/day11_lab10_react/static/css/main.1b7a83d6.chunk.css",
+  "main.js": "/day11_lab10_react/static/js/main.74480611.chunk.js",
+  "main.js.map": "/day11_lab10_react/static/js/main.74480611.chunk.js.map",
   "runtime~main.js": "/day11_lab10_react/static/js/runtime~main.3fe159b8.js",
   "runtime~main.js.map": "/day11_lab10_react/static/js/runtime~main.3fe159b8.js.map",
   "static/js/2.5bfccd3c.chunk.js": "/day11_lab10_react/static/js/2.5bfccd3c.chunk.js",
   "static/js/2.5bfccd3c.chunk.js.map": "/day11_lab10_react/static/js/2.5bfccd3c.chunk.js.map",
   "index.html": "/day11_lab10_react/index.html",
-  "precache-manifest.a252bec823ac83c046093406c4f752ce.js": "/day11_lab10_react/precache-manifest.a252bec823ac83c046093406c4f752ce.js",
+  "precache-manifest.4e548cfa7fc67fed91af8c25baf2101c.js": "/day11_lab10_react/precache-manifest.4e548cfa7fc67fed91af8c25baf2101c.js",
   "service-worker.js": "/day11_lab10_react/service-worker.js",
+  "static/css/main.1b7a83d6.chunk.css.map": "/day11_lab10_react/static/css/main.1b7a83d6.chunk.css.map",
   "static/media/logo.svg": "/day11_lab10_react/static/media/logo.5d5d9eef.svg"
 }
