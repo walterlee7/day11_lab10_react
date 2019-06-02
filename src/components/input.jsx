@@ -14,16 +14,8 @@ class Input extends Component {
     handleInputTextChange = (value) => {
 
         console.log(value);
-        let i = this.state.count;
-        let counter = value ? i++ : 0;
-
-        if (!counter) {
-            console.log('counting');
-        }
-
-        console.log(i);
-
-        this.setState({ text: value, count: i });
+        console.log('string ' + value.length);
+        this.setState({ text: value, count: value.length });
         console.log(this.state.count);
     }
 
