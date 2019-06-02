@@ -59,6 +59,7 @@ body {
 
 .text-wrapper {
     display: inline-block;
+    overflow-wrap: break-word;
     background-color: rgb(189, 186, 186);
     padding: 1em;
     font-size: 22px;

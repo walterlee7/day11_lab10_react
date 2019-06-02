@@ -61,15 +61,17 @@ class List extends Component {
         return (
             <div className="Comment">
                 <div className="container">
-                    <div className={"panel panel-white panel-input " + this.state.chirpClass + " panel-shadow"}>
-                        <div className="post-heading">
-                            <div className="pull-left meta">
-                                <div className="chirpTitle">Make Chirps Here</div>
-                                <div>
-                                    <Input
-                                        onOutput={(value) => this.handleOutput(value)}
-                                    />
-                                    <Items info={this.state.info} />
+                    <div className="col-sm-12">
+                        <div className={"panel panel-white panel-input " + this.state.chirpClass + " panel-shadow"}>
+                            <div className="post-heading">
+                                <div className="pull-left meta">
+                                    <div className="chirpTitle">Make Chirps Here</div>
+                                    <div>
+                                        <Input
+                                            onOutput={(value) => this.handleOutput(value)}
+                                        />
+                                        <Items info={this.state.info} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
