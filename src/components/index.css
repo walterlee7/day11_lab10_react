@@ -37,6 +37,10 @@ body {
     padding: 0.5em;
 }
 
+.container {
+    padding: 0;
+}
+
 .Comment {
     background-color: black;
 }
@@ -50,16 +54,22 @@ body {
     padding: 0.5em;
 }
 
+.counter {
+    margin: 0.2em;
+    padding-top: 0.15em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 22px;
+    border: 1px solid black;
+    background-color: white;
+}
+
 .textButton {
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(149, 235, 230);
     padding: 0.5em;
 }
-
-/* .text-container {
-    overflow-wrap: break-word;
-} */
 
 .text-wrapper {
     display: inline-block;

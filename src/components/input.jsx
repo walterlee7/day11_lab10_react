@@ -5,7 +5,8 @@ class Input extends Component {
         super(props);
 
         this.state = {
-            text: ''
+            text: '',
+            count: 0
         };
 
     }
@@ -34,6 +35,9 @@ class Input extends Component {
                 <div className="col-sm-12">
                     <div className="input-heading">
                         <div className="input-wrapper">
+                            <div className="counter">
+                                {this.state.count}
+                            </div>
                             <div className="input">
                                 <input
                                     className="textInput"
