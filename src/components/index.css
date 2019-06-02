@@ -34,7 +34,12 @@ body {
 }
 
 .chirpTitle {
+    margin: 0.1em;
     padding: 0.5em;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: rgb(189, 252, 249);
 }
 
 .container {

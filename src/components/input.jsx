@@ -12,21 +12,32 @@ class Input extends Component {
     }
 
     handleInputTextChange = (value) => {
-        this.setState({ text: value });
+
+        console.log(value);
+        let i = this.state.count;
+        let counter = value ? i++ : 0;
+
+        if (!counter) {
+            console.log('counting');
+        }
+
+        console.log(i);
+
+        this.setState({ text: value, count: i });
+        console.log(this.state.count);
     }
 
     handleClear(event) {
         window.location.reload();
     }
 
-    handleOutput(event) {
+    handleOutput() {
         this.props.onOutput(this.state);
-        let clearStats =
-        {
-            text: ''
-        };
 
-        this.setState(clearStats);
+        this.setState({
+            text: '',
+            count: 0
+        });
     }
 
     render() {
@@ -48,7 +59,7 @@ class Input extends Component {
                             <div className="btn-text">
                                 <button
                                     className="textButton panel-shadow"
-                                    onClick={(event) => { return this.handleOutput(event) }}
+                                    onClick={() => { this.handleOutput() }}
                                 >Chirp</button>
                             </div>
                             <div className="btn-text">
