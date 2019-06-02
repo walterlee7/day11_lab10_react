@@ -57,9 +57,13 @@ body {
     padding: 0.5em;
 }
 
+/* .text-container {
+    overflow-wrap: break-word;
+} */
+
 .text-wrapper {
     display: inline-block;
-    overflow-wrap: break-word;
+    word-break: break-all;
     background-color: rgb(189, 186, 186);
     padding: 1em;
     font-size: 22px;
