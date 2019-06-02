@@ -13,7 +13,7 @@ class List extends Component {
                     text: 'Hello World!',
                 },
             ],
-            chirpClass: 'post'
+            chirpClass: 'post2'
         };
     }
 
@@ -24,11 +24,11 @@ class List extends Component {
             ]
         };
 
-        if (this.state.chirpClass === 'post') {
-            newList.chirpClass = 'post2';
-        } else {
-            newList.chirpClass = 'post';
-        }
+        // if (this.state.chirpClass === 'post') {
+        //     newList.chirpClass = 'post2';
+        // } else {
+        //     newList.chirpClass = 'post';
+        // }
 
         let id = newList.info[newList.info.length - 1].id + 1;
 
@@ -46,14 +46,7 @@ class List extends Component {
     }
 
     handleClear() {
-        let clearState = {
-            info: [
-                {
-                    text: '',
-                }
-            ]
-        }
-        this.setState(clearState);
+        window.location.reload();
     }
 
 
@@ -66,6 +59,11 @@ class List extends Component {
                             <div className="post-heading">
                                 <div className="pull-left meta">
                                     <div className="chirpTitle">Make Chirps Here</div>
+                                    <div className="btn-text">
+                                        <button className="clearButton panel-shadow"
+                                            onClick={() => { this.handleClear() }}
+                                        >Clear</button>
+                                    </div>
                                     <div>
                                         <Input
                                             onOutput={(value) => this.handleOutput(value)}

@@ -12,12 +12,9 @@ class Input extends Component {
     }
 
     handleInputTextChange = (value) => {
-        // this.setState({ text: value, count: value.length });
-        this.state.count <= 100 ? this.setState({ text: value, count: value.length }) : alert('Chirp is too long!');
-    }
-
-    handleClear() {
-        window.location.reload();
+        this.state.count <= 100 ?
+            this.setState({ text: value, count: value.length }) :
+            alert('Chirp is too long!');
     }
 
     handleOutput() {
@@ -50,11 +47,6 @@ class Input extends Component {
                                     className="textButton panel-shadow"
                                     onClick={() => { this.handleOutput() }}
                                 >Chirp</button>
-                            </div>
-                            <div className="btn-text">
-                                <button className="clearButton panel-shadow"
-                                    onClick={() => { this.handleClear() }}
-                                >Clear</button>
                             </div>
                         </div>
                     </div>
