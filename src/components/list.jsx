@@ -81,9 +81,7 @@ class List extends Component {
                 </div>
             </div>
         );
-
     }
-
 }
 
 export default List;

@@ -4,7 +4,7 @@ const Items = (props) => {
 
     let listItems = props.info.map((item, index) => {
         return (
-            <div key={index} className="container">
+            <div key={index} className="comment-container">
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="panel panel-white post panel-shadow">
