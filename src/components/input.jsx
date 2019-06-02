@@ -12,14 +12,11 @@ class Input extends Component {
     }
 
     handleInputTextChange = (value) => {
-
-        console.log(value);
-        console.log('string ' + value.length);
-        this.setState({ text: value, count: value.length });
-        console.log(this.state.count);
+        // this.setState({ text: value, count: value.length });
+        this.state.count <= 100 ? this.setState({ text: value, count: value.length }) : alert('Chirp is too long!');
     }
 
-    handleClear(event) {
+    handleClear() {
         window.location.reload();
     }
 
@@ -56,7 +53,7 @@ class Input extends Component {
                             </div>
                             <div className="btn-text">
                                 <button className="clearButton panel-shadow"
-                                    onClick={(event) => { return this.handleClear(event) }}
+                                    onClick={() => { this.handleClear() }}
                                 >Clear</button>
                             </div>
                         </div>
