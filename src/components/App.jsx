@@ -3,7 +3,7 @@ import logo from '../logo.svg';
 import List from './list';
 import './index.css';
 
-class Header extends Component {
+class App extends Component {
     render() {
         return (
             <div className="App">
@@ -17,4 +17,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default App;

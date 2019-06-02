@@ -15,7 +15,6 @@ class Input extends Component {
     }
 
     handleClear(event) {
-        // this.props.onClear(this.state);
         window.location.reload();
     }
 
@@ -52,7 +51,6 @@ class Input extends Component {
                                             onClick={(event) => { return this.handleOutput(event) }}
                                         >Chirp</button>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

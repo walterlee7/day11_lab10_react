@@ -2,48 +2,36 @@ body {
   font-family: sans-serif;
 }
 
-/* * {
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
-  }
-  *:before,
-  *:after {
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
-  } */
-
-  .App {
+.App {
     text-align: center;
-  }
+}
 
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App-logo {
+    animation: App-logo-spin infinite 1s linear;
     height: 80px;
-  }
+}
 
-  .App-header {
+.App-header {
     background-color: #222;
     height: 11em;
     padding: 1em;
     color: white;
     text-align: center;
-  }
+}
 
-  .App-title {
+.App-title {
     margin: 1em;
     font-size: 1.5em;
-  }
+}
 
-  .App-intro {
+.App-intro {
     font-size: large;
-  }
+}
 
-  @keyframes App-logo-spin {
+@keyframes App-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-  }
+}
 
 .chirpTitle {
     padding: 0.5em;
@@ -71,8 +59,8 @@ body {
 }
 
 .clear {
-  display: inline-block;
-  padding: 3px 3px;
+    display: inline-block;
+    padding: 3px 3px;
 }
 
 .btn-clear {
@@ -83,20 +71,20 @@ body {
 }
 
 .panel-shadow {
-  box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
 }
 
 .panel-white {
-border: 1px solid #dddddd;
+    border: 1px solid #dddddd;
 }
 .panel-white  .panel-heading {
-color: #333;
-background-color: #fff;
-border-color: #ddd;
+    color: #333;
+    background-color: #fff;
+    border-color: #ddd;
 }
 .panel-white  .panel-footer {
-background-color: #fff;
-border-color: #ddd;
+    background-color: #fff;
+    border-color: #ddd;
 }
 
 .clear-wrapper {
@@ -109,96 +97,96 @@ border-color: #ddd;
 }
 
 .input-heading {
-height: 65px;
+    height: 65px;
 }
 
 .post .post-heading {
-height: 95px;
-padding: 20px, 15px;
+    height: 95px;
+    padding: 20px, 15px;
 }
 .post .post-heading .avatar {
-width: 60px;
-height: 60px;
-display: block;
-margin-right: 15px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: 15px;
 }
 .post .post-heading .meta .title {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 .post .post-heading .meta .title a {
-color: black;
+    color: black;
 }
 .post .post-heading .meta .title a:hover {
-color: #aaaaaa;
+    color: #aaaaaa;
 }
 .post .post-heading .meta .time {
-margin-top: 8px;
-color: #999;
+    margin-top: 8px;
+    color: #999;
 }
 .post .post-image .image {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 }
 .post .post-description {
-padding: 15px;
-background-color: lightblue;
-border: 1px solid black;
-margin: 0;
+    padding: 15px;
+    background-color: lightblue;
+    border: 1px solid black;
+    margin: 0;
 }
 .post .post-description p {
-font-size: 20px;
+    font-size: 20px;
 }
 .post .post-description .stats {
-margin-top: 20px;
+    margin-top: 20px;
 }
 .post .post-description .stats .stat-item {
-display: inline-block;
-margin-right: 15px;
+    display: inline-block;
+    margin-right: 15px;
 }
 .post .post-description .stats .stat-item .icon {
-margin-right: 8px;
+    margin-right: 8px;
 }
 .post .post-footer {
-border-top: 1px solid #ddd;
-padding: 15px;
+    border-top: 1px solid #ddd;
+    padding: 15px;
 }
 .post .post-footer .input-group-addon a {
-color: #454545;
+    color: #454545;
 }
 .post .post-footer .comments-list {
-padding: 0;
-margin-top: 20px;
-list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
 }
 .post .post-footer .comments-list .comment {
-display: block;
-width: 100%;
-margin: 20px 0;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
 }
 .post .post-footer .comments-list .comment .avatar {
-width: 35px;
-height: 35px;
+    width: 35px;
+    height: 35px;
 }
 .post .post-footer .comments-list .comment .comment-heading {
-display: block;
-width: 100%;
+    display: block;
+    width: 100%;
 }
 .post .post-footer .comments-list .comment .comment-heading .user {
-font-size: 14px;
-font-weight: bold;
-display: inline;
-margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline;
+    margin-right: 10px;
 }
 .post .post-footer .comments-list .comment .comment-heading .time {
-font-size: 12px;
-color: #aaa;
-display: inline;
+    font-size: 12px;
+    color: #aaa;
+    display: inline;
 }
 .post .post-footer .comments-list .comment .comment-body {
-margin-left: 50px;
+    margin-left: 50px;
 }
 .post .post-footer .comments-list .comment > .comments-list {
-margin-left: 50px;
+    margin-left: 50px;
 }
 
 .Comment {
