@@ -53,14 +53,23 @@ body {
 .textButton {
     border: 1px solid black;
     border-radius: 15px;
-    background-color: rgb(156, 247, 104);
+    background-color: rgb(149, 235, 230);
     padding: 0.5em;
+}
+
+.text-wrapper {
+    display: inline-block;
+    background-color: rgb(189, 186, 186);
+    padding: 1em;
+    font-size: 22px;
+    border-radius: 15px;
+    margin: 0.5em;
 }
 
 .clearButton {
     border: 1px solid black;
     border-radius: 15px;
-    background-color: rgb(255, 61, 61);
+    background-color: rgb(247, 203, 9);
     padding: 0.5em;
 }
 
@@ -70,11 +79,11 @@ body {
 }
 
 .panel-input {
-    background-color: rgb(168, 240, 154);
+    background-color: rgb(149, 235, 230);
 }
 
 .input {
-    padding: 3px 3px;
+    padding: 4px 4px;
 }
 
 .btn-clear {
@@ -88,6 +97,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 0.5em;
 }
 
 .panel-shadow {

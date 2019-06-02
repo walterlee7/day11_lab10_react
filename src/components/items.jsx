@@ -8,9 +8,7 @@ const Items = (props) => {
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="panel panel-white post panel-shadow">
-                            <div className="post-description">
-                                <div>{item.text}</div>
-                            </div>
+                            <div className="text-wrapper">{item.text}</div>
                         </div>
                     </div>
                 </div>
