@@ -103,6 +103,10 @@ body {
     padding: 3px 3px;
 }
 
+.btn-text-clear {
+    padding-top: 0.5em;
+}
+
 .panel-input {
     background-color: rgb(149, 235, 230);
 }

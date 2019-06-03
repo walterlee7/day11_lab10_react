@@ -32,8 +32,11 @@ class Input extends Component {
                 <div className="col-sm-12">
                     <div className="input-heading">
                         <div className="input-wrapper">
-                            <div className="counter">
-                                {this.state.count}
+                            <div className="btn-text">
+                                <button
+                                    className="textButton panel-shadow"
+                                    onClick={() => { this.handleOutput() }}
+                                >Chirp</button>
                             </div>
                             <div className="input">
                                 <input
@@ -42,11 +45,8 @@ class Input extends Component {
                                     value={this.state.text}
                                     onChange={(event) => this.handleInputTextChange(event.target.value)} />
                             </div >
-                            <div className="btn-text">
-                                <button
-                                    className="textButton panel-shadow"
-                                    onClick={() => { this.handleOutput() }}
-                                >Chirp</button>
+                            <div className="counter">
+                                {this.state.count}
                             </div>
                         </div>
                     </div>

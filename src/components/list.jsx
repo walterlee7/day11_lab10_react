@@ -58,8 +58,8 @@ class List extends Component {
                         <div className={"panel panel-white panel-input " + this.state.chirpClass + " panel-shadow"}>
                             <div className="post-heading">
                                 <div className="pull-left meta">
-                                    <div className="chirpTitle">Make Chirps Here</div>
-                                    <div className="btn-text">
+                                    {/* <div className="chirpTitle">Make Chirps Here</div> */}
+                                    <div className="btn-text-clear">
                                         <button className="clearButton panel-shadow"
                                             onClick={() => { this.handleClear() }}
                                         >Clear</button>
