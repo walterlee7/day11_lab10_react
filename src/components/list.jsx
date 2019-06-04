@@ -13,7 +13,6 @@ class List extends Component {
                     text: 'Hello World!',
                 },
             ],
-            chirpClass: 'post2'
         };
     }
 
@@ -23,12 +22,6 @@ class List extends Component {
                 ...this.state.info
             ]
         };
-
-        // if (this.state.chirpClass === 'post') {
-        //     newList.chirpClass = 'post2';
-        // } else {
-        //     newList.chirpClass = 'post';
-        // }
 
         let id = newList.info[newList.info.length - 1].id + 1;
 
@@ -49,16 +42,14 @@ class List extends Component {
         window.location.reload();
     }
 
-
     render() {
         return (
             <div className="Comment">
                 <div className="container">
                     <div className="col-sm-12">
-                        <div className={"panel panel-white panel-input " + this.state.chirpClass + " panel-shadow"}>
+                        <div className={"panel panel-white panel-input post2 panel-shadow"}>
                             <div className="post-heading">
                                 <div className="pull-left meta">
-                                    {/* <div className="chirpTitle">Make Chirps Here</div> */}
                                     <div className="btn-text-clear">
                                         <button className="clearButton panel-shadow"
                                             onClick={() => { this.handleClear() }}
