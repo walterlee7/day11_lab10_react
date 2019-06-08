@@ -11,12 +11,14 @@ class Input extends Component {
 
     }
 
+    //ternary operator method to stop chirps at 100 characters
     handleInputTextChange = (value) => {
         this.state.count <= 100 ?
             this.setState({ text: value, count: value.length }) :
             alert('Chirp is too long!');
     }
 
+    //takes parent method onOutput to set chirp and clear input text
     handleOutput() {
         this.props.onOutput(this.state);
 
